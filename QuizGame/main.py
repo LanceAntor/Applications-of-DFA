@@ -14,11 +14,9 @@ class QuizGameFSM:
         self.lives = 3  # Start with 3 lives
         self.questions = []
         
-        # Setup styles
         self.style = Style(theme="flatly")
         self.style.configure("Quiz.TButton", font=("Arial", 12))
 
-        # Start with the start screen state
         self.transition_to("StartScreen")
 
     def transition_to(self, state):
